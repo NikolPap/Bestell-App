@@ -1,0 +1,26 @@
+#dialog_btn {
+    display: none;
+    padding: 5px 20px;
+}
+
+.btn {
+    width: 100%;
+    font-weight: bold !important;
+}
+
+@media (max-width:700px) {
+    .basket_wrapper{
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #dialog_btn {
+        display: block;
+    }
+
+    .illustration_img {
+        display: none;
+    }

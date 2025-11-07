@@ -1,0 +1,14 @@
+#dialog_btn {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  z-index: 1000; /* ώστε να μην το καλύπτει τίποτα */
+}
+
+#dialog_btn .btn {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}

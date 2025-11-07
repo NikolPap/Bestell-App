@@ -1,0 +1,38 @@
+.send_image {
+    width: 25px;
+    fill: #8bc1d3;
+}
+
+.menu_image {
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav_links {
+    background-color: rgb(247,246,241);
+    width: 100%calc(100% - 308px);
+    margin-top: 15px;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.test_content {
+    padding: 32px;
+    font-size: 48px;
+    height: 1500px;
+    width: 100%;
+}
+
+.content {
+    width: calc(100% - 308px);
+    border: 2px solid  rgb(235, 232, 232);
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
