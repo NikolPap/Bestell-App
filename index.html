@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestell App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/basket.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/scripts/dt.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+  </head>
+
+  <body onload="init()">
+    <nav class="header navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <img id="logo_img" src="./assets/img/Logo.png" alt="bestell app logo">
+    </button>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <img src="./assets/icons/icons8-menü-30.png" alt="">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
+            <li><a class="dropdown-item" href="#salad">Salat</a></li>
+            <li><a class="dropdown-item" href="#dessert">Dessert</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="content_wrapper">
+      <section class="content">
+        <div class="card" style="width: fit-contentcalc(100% - 308px)">
+          <img
+            src="./assets/img/rome.jpg"
+            class="card-img-top"
+            alt="Rome image"
+          />
+          <img class="illustration_img" src="./assets/icons/italy (2).png" alt="pizza illustration">
+          <div class="card-body">
+            <h3>Pizzeria di Roma</h3>
+            <span id="rating">Bewertung(4,2 von 5 Sternen)</span>
+            <div class="nav_links">
+              <img
+                class="send_image"
+                src="./assets/icons/arrow.png"
+                alt="send message image"
+              />
+              <a href="#pizza">Pizza</a>
+              <a href="#salad">Salat</a>
+              <a href="#dessert">Dessert</a>
+            </div>
+          </div>
+
+          <div 
+            class="card card_menu"
+            style="width: fit-contentcalc(100% - 308px)"
+          >
+            <img
+              src="./assets/img/pizza.jpg"
+              class="card-img-top menu-img"
+              alt="pizza image"
+            />
+            <div class="card-body" >
+              <h5 class="card-title">Pizza</h5>
+         
+            <ul id="pizza" class="list-group list-group-flush">
+            </ul>
+          </div>
+
+          <div
+            class="card card_menu"
+            style="width: fit-contentcalc(100% - 308px)"
+          >
+            <img
+              src="./assets/img/salads.jpg"
+              class="card-img-top menu-img"
+              alt="salad image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Salat</h5>
+           
+            <ul  id="salad" class="list-group list-group-flush">
+             
+            </ul>
+          </div>
+
+          <div
+            class="card card_menu"
+            style="width: fit-contentcalc(100% - 308px)"
+          >
+            <img
+              src="./assets/img/dessert.jpg"
+              class="card-img-top menu-img"
+              alt="dessert image"
+            />
+            <div class="card-body" >
+              <h5 class="card-title">Dessert</h5>
+            <ul id="dessert" class="list-group list-group-flush">
+            
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="basket_wrapper">
+        <div class="basket">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid basket-headline">
+                <span class="navbar-brand mb-0 h1">Warenkorb</span>
+               </div>
+               </nav>
+               <div id="products_basket">
+                <ul>
+                  <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span >5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                   <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span>5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                   <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span>5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                  
+                </ul>
+
+                <div class="total">
+                  <ul>
+                    <li><div class="first_line total_line"><span>Zwischensumme</span> <span>64,50&euro;</span></div></li>
+                    <li><div class="total_line"><span>Lieferkosten</span> <span>64,50&euro;</span></div></li>
+                    <li><div class="total_line"><span><strong>Gesamt</strong></span><span><strong>69.50&euro;</strong></span></div></li>
+                  </ul>
+                </div>
+               </div>
+                <button class="btn btn-primary">Bestellen</button>
+            
+        </div>
+      </section>
+    </div>
+
+    
+
+<!-- Button trigger modal -->
+ <div id="dialog_btn"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Warenkorb
+</button></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Warenkorb Schließen</button>
+      </div>
+      <div class="modal-body">
+         <div class="basket">
+               <div id="products_basket">
+                <ul>
+                  <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span >5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                   <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span>5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                   <li>
+                    <h5>Pizza Krabben</h5>
+                    <div class="basket_line">
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
+                      <span>5x</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
+                      <span class="total_cost_product">29.50&euro;</span>
+                      <button class="basket_btn"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
+                     </div>
+                  </li>
+                  
+                </ul>
+
+                <div class="total">
+                  <ul>
+                    <li><div class="first_line total_line"><span>Zwischensumme</span> <span>64,50&euro;</span></div></li>
+                    <li><div class="total_line"><span>Lieferkosten</span> <span>64,50&euro;</span></div></li>
+                    <li><div class="total_line"><span><strong>Gesamt</strong></span><span><strong>69.50&euro;</strong></span></div></li>
+                 
+                  </ul>
+                </div>
+               </div>
+                  <button class="btn btn-primary">Bestellen</button>
+            
+        </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <footer></footer>
+  </body>
+</html>
