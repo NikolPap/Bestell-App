@@ -1,6 +1,9 @@
 const menu = [
   {
     category: "Pizza",
+    src: "./assets/img/pizza.jpg",
+    alt: "pizza image",
+    title: "Pizza",
     items: [
       {
         name: "Pizza Margherita",
@@ -31,6 +34,9 @@ const menu = [
   },
   {
     category: "Salat",
+    src: "./assets/img/salads.jpg",
+    alt: "salad image" ,
+    title: "Salat",
     items: [
       {
         name: "Gemischter Salat",
@@ -61,6 +67,9 @@ const menu = [
   },
   {
     category: "Dessert",
+    src: "./assets/img/dessert.jpg",
+    alt: "dessert image" ,
+    title: "Dessert",
     items: [
       {
         name: "Tiramisu",
