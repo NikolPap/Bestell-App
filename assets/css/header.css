@@ -12,3 +12,10 @@
   max-width: 120px;
 }
 
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -100px !important;
+}
