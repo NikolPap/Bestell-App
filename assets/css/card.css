@@ -6,11 +6,11 @@
 .illustration_img {
   width: 80px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 25%;
   position: absolute;
   left: 43%;          
-  top: 97px; 
-  background-color: white;
+  top: 110px;
+  opacity: 50%;
 
 }           
 .card {
