@@ -66,6 +66,22 @@ function getBasketSumTemplate() {
         </div>
       </li>
     </ul>
-    <button class="btn btn-primary">Bestellen</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Bestellen
+</button>
     `;
+}
+
+function getEmptyBasketTemplate() {
+  return `<div class="empty_basket">
+              <img
+                class="empty_basket_img"
+                src="./assets/icons/shopping-bag.png"
+                alt="a shopping-bag"
+              />
+              <p class="empty_basket_text">
+                Wähle leckere Gerichte aus der <br />
+                Karte und bestelle Dein Menü.
+              </p>
+            </div>`;
 }
