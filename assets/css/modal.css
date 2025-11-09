@@ -12,3 +12,8 @@
   margin: 0 auto;
   display: block;
 }
+
+.small_header {
+  background-color: rgb(255, 128, 0);
+  color: white;
+}

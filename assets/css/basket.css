@@ -55,3 +55,18 @@
     justify-content: space-between;
     padding-right: 10px;
 }
+
+.empty_basket_img {
+    width: 40px;
+    opacity: 0.3;
+}
+
+.empty_basket {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
