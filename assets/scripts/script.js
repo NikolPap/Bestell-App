@@ -4,7 +4,8 @@ let total = 0;
 
 function init() {
   renderMenu();
-  renderBasket();
+  renderEmtyBasket();
+  renderEmtyBasket();
 }
 
 function renderMenu() {
@@ -25,9 +26,7 @@ function renderItems(i) {
 
 function renderBasket() {
   let basketRef = document.getElementById("products_basket");
-  let basketModalRef = document.getElementById("products_basket_modal");
-  basketRef.innerHTML ="";
-  basketModalRef.innerHTML = "";
+  basketRef.innerHTML = '';
 
   subtotal = 0;
   let endCostItem = 0;
@@ -38,9 +37,9 @@ function renderBasket() {
       if (item.portion > 0) {
         endCostItem = item.portion * item.price;
         basketRef.innerHTML += getBasketTemlate(i, index, endCostItem);
-        basketModalRef.innerHTML += getBasketTemlate(i, index, endCostItem);
         subtotal += endCostItem;
       }
+
     }
   }
 
@@ -59,24 +58,19 @@ function renderBasketSum() {
   if (subtotal > 0) {
     totalRef.innerHTML = getBasketSumTemplate();
     totalModalRef.innerHTML = getBasketSumTemplate();
+
+  }else {
+    renderEmtyBasket()
   }
 }
 
-function plusAction(i, index) {
-  menu[i].items[index].portion = menu[i].items[index].portion + 1;
-  renderBasket();
-  renderBasketSum();
+function renderBasketModal() {
+  let basketRef = document.getElementById("products_basket");
+  let basketModalRef = document.getElementById("products_basket_modal");
+  basketModalRef.innerHTML = basketRef.innerHTML;
 }
 
-function minusAction(i, index) {
-  menu[i].items[index].portion = menu[i].items[index].portion - 1;
-  renderBasket();
-  renderBasketSum();
-}
-
-
-function removeAction(i, index) {
-    menu[i].items[index].portion = 0;
-    renderBasket();
-    renderBasketSum();
+function renderEmtyBasket() {
+  let basketRef = document.getElementById("products_basket");
+  basketRef.innerHTML = getEmptyBasketTemplate();
 }
