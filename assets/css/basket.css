@@ -16,7 +16,7 @@
 .basket {
   position: sticky;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
   max-height: 80vh;
   overflow-y: auto;
   width: 100%;

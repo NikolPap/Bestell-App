@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   position: sticky !important;
-  z-index: 2;
+  z-index: 100;
   top: 0;
 }
 
@@ -21,4 +21,6 @@
 
 .dropdown-menu[data-bs-popper] {
   left: -100px !important;
+  position: absolute;
+  z-index: 200; 
 }
