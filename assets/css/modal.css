@@ -17,3 +17,8 @@
   background-color: rgb(255, 128, 0);
   color: white;
 }
+
+.modal-body {
+  padding: var(--bs-modal-header-padding);
+}
+
