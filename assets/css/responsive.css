@@ -8,7 +8,7 @@
     font-weight: bold !important;
 }
 
-@media (max-width:700px) {
+@media (max-width:830px) {
     .basket_wrapper{
         display: none;
     }
@@ -24,4 +24,21 @@
     .illustration_img {
         display: none;
     }
+
+    .list-group-item  {
+        height: 165px;
+    }
 }
+
+@media (max-width:530px) {
+    .list-group-item  {
+        height: 170px;
+    }
+}
+
+@media (max-width:350px) {
+    .list-group-item  {
+        height: 193px;
+    }
+}
+
