@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 body {
@@ -30,6 +30,8 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 a {
@@ -51,4 +53,9 @@ a:hover {
 
 footer {
     height: 60px;
+}
+
+.mw {
+    max-width: 1440px;
+    margin: 0 auto;
 }
