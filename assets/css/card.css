@@ -35,12 +35,14 @@
     justify-content: space-between;
     padding: 0 !important;
     border: 1px solid rgb(235, 232, 232) !important;
-    height: 135px;
+    height: 145px;
     margin-bottom: 15px;
+    
 }
 
 .list-group-item:hover {
     background-color:  rgb(254,229,203);
+    cursor: pointer;
 }
 
 .plus_image {
