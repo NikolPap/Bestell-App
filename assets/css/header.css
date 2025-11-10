@@ -6,6 +6,9 @@
   background-color: rgb(255, 128, 0) !important;
   display: flex;
   justify-content: space-between;
+  position: sticky !important;
+  z-index: 2;
+  top: 0;
 }
 
 #logo_img {
