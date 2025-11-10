@@ -18,7 +18,7 @@ function getItemTemplate(i, index) {
                 <div class="menu_info">
                   <h5>${menu[i].items[index].name}</h5>
                   <p>${menu[i].items[index].description}</p>
-                  <p class="card_menu_preis">${menu[i].items[index].price} &euro;</p>
+                  <p class="card_menu_preis">${menu[i].items[index].price.toFixed(2).replace('.', ',')} &euro;</p>
                 </div>
                <div class="plus_menu"><img class="plus_image" src="./assets/icons/plus.png" alt="ein plus image"></div></li>`;
 }
@@ -31,15 +31,13 @@ function getBasketTemlate(i, index, endCostItem) {
                       <button class="basket_btn" onclick ="minusAction(${i},${index})" ><img class="basket_img" src="./assets/icons/minus.png" alt="minus image"></button>
                       <span >${menu[i].items[index].portion}X</span>
                       <button class="basket_btn" onclick ="plusAction(${i},${index})"><img class="basket_img" src="./assets/icons/plus.png" alt="plus image"></button>
-                      <span class="total_cost_product"> ${endCostItem.toFixed(
-                        2
-                      )} &euro;</span>
+                      <span class="total_cost_product"> ${endCostItem.toFixed(2).replace('.', ',')} &euro;</span>
                       <button class="basket_btn" onclick ="removeAction(${i},${index})"><img class="basket_img" src="./assets/icons/trash.png" alt="trash mage"></button>
                      </div>
                   </li>
                 </ul>
 
-                <div id="total">
+
                
                </div>
               `;
@@ -50,19 +48,19 @@ function getBasketSumTemplate() {
       <li>
         <div class="total_line">
           <span>Zwischensumme</span>
-          <span>${subtotal.toFixed(2)}&euro;</span>
+          <span>${subtotal.toFixed(2).replace('.', ',')}&euro;</span>
         </div>
       </li>
       <li>
         <div class="total_line">
           <span>Lieferkosten</span>
-          <span>${deliveryCost.toFixed(2)}&euro;</span>
+          <span>${deliveryCost.toFixed(2).replace('.', ',')}&euro;</span>
         </div>
       </li>
       <li>
         <div class="total_line">
           <span><strong>Gesamt</strong></span>
-          <span><strong>${total.toFixed(2)}&euro;</strong></span>
+          <span><strong>${total.toFixed(2).replace('.', ',')}&euro;</strong></span>
         </div>
       </li>
     </ul>
